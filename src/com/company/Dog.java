@@ -5,7 +5,8 @@ public class Dog extends Animal implements Printable {
     private String breed;
 
 
-    public Dog(int age,String breed) {
+    public Dog(String voice, int age, String breed) {
+        super(voice);
         this.age = age;
         this.breed = breed;
     }
@@ -19,6 +20,6 @@ public class Dog extends Animal implements Printable {
 
     @Override
     public void print() {
-        System.out.println(getAge() +" "+getBreed());
+        System.out.println(getAge() +" "+getBreed()+" "+ getVoice());
     }
 }

@@ -15,16 +15,16 @@ public class Main {
 
         switch (name){
             case "Dog":
-                object = new Dog(13,"Afcharka");
+                object = new Dog("gaf",12,"Afcharka");
                 break;
             case "Cat":
-                object = new Cat(16,"black");
+                object = new Cat("myay",13,"black");
                 break;
             case "Cow":
-                object = new Cow(25,"idk cow breed","black and white");
+                object = new Cow("muuu",25,"idk cow breed","black and white");
                 break;
             case "Dog2":
-               object = new Dog(10,"dalmatian");
+               object = new Dog("RRRR",10,"dalmatian");
                break;
         }
         return object;

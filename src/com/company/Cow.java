@@ -5,7 +5,8 @@ public class Cow extends Animal implements Printable {
     private String breed;
     private String coloring;
 
-    public Cow(int age, String breed,String coloring) {
+    public Cow(String voice, int age, String breed, String coloring) {
+        super(voice);
         this.age = age;
         this.breed = breed;
         this.coloring = coloring;
@@ -23,7 +24,7 @@ public class Cow extends Animal implements Printable {
 
     @Override
     public void print() {
-        System.out.println(getAge() + " " + getBreed() + "   " + getColoring());
+        System.out.println(getAge() + " " + getBreed() + "   " + getColoring()+" "+getVoice());
 
     }
 }

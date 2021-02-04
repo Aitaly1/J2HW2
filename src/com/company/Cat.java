@@ -4,7 +4,8 @@ public class Cat extends Animal implements Printable {
     private int age;
     private String color;
 
-    public Cat(int age, String color) {
+    public Cat(String voice, int age, String color) {
+        super(voice);
         this.age = age;
         this.color = color;
     }
@@ -18,6 +19,6 @@ public class Cat extends Animal implements Printable {
 
     @Override
     public void print() {
-        System.out.println(getAge() +" "+ getColor());
+        System.out.println(getAge() +" "+ getColor()+" "+getVoice());
     }
 }
